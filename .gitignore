@@ -1,0 +1,29 @@
+# Visual Studio 用户状态与缓存
+.vs/
+*.suo
+*.user
+*.vsidx
+*.ipch
+
+# 构建产物（x64/Debug/Release/bin/obj 等）
+x64/
+Debug/
+Release/
+bin/
+obj/
+*.obj
+*.exe
+*.dll
+*.pdb
+*.ilk
+*.idb
+*.tlog/
+*.recipe
+*.log
+
+# 压缩包与备份
+*.zip
+
+# 系统文件
+Thumbs.db
+.DS_Store

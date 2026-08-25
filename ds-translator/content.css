@@ -1,0 +1,90 @@
+/* DeepSeek 翻译助手 —— 浮动按钮与翻译浮窗样式 */
+
+#ds-translator-btn {
+  position: fixed;
+  z-index: 2147483647;
+  min-width: 26px;
+  height: 26px;
+  padding: 0 7px;
+  box-sizing: border-box;
+  background: #4d6bfe;
+  color: #ffffff;
+  font: 600 14px/26px "Segoe UI", "Microsoft YaHei", sans-serif;
+  text-align: center;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  user-select: none;
+}
+
+#ds-translator-btn:hover {
+  background: #3a55e0;
+}
+
+#ds-translator-tooltip {
+  position: fixed;
+  z-index: 2147483647;
+  max-width: min(560px, 90vw);
+  max-height: 70vh;
+  overflow: auto;
+  background: #ffffff;
+  color: #1f2328;
+  border: 1px solid #d0d7de;
+  border-radius: 10px;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.22);
+  font: 14px/1.7 "Segoe UI", "Microsoft YaHei", sans-serif;
+  padding: 10px 12px;
+  box-sizing: border-box;
+}
+
+#ds-translator-tooltip .ds-t-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  font-weight: 600;
+  color: #4d6bfe;
+  margin-bottom: 6px;
+}
+
+#ds-translator-tooltip .ds-t-actions {
+  display: flex;
+  gap: 6px;
+}
+
+#ds-translator-tooltip button {
+  border: none;
+  background: #eef1ff;
+  color: #3a55e0;
+  border-radius: 6px;
+  padding: 2px 8px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+#ds-translator-tooltip button:hover {
+  background: #dfe5ff;
+}
+
+#ds-translator-tooltip .ds-t-close {
+  background: #f0f0f0;
+  color: #666666;
+}
+
+#ds-translator-tooltip .ds-t-close:hover {
+  background: #e3e3e3;
+}
+
+#ds-translator-tooltip .ds-t-body {
+  white-space: normal;
+  word-break: break-word;
+}
+
+#ds-translator-tooltip .ds-t-body.ds-t-loading {
+  color: #888888;
+}
+
+#ds-translator-tooltip .ds-t-body.ds-t-error {
+  color: #c62828;
+  white-space: pre-wrap;
+}

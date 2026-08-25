@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "DeepSeek 翻译助手",
+  "version": "1.0.0",
+  "description": "选中英文文本，调用 DeepSeek API 翻译成中文。适用于 GitHub、Codeforces 等网页。",
+  "permissions": ["contextMenus", "storage"],
+  "host_permissions": ["https://api.deepseek.com/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["content.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "DeepSeek 翻译助手"
+  }
+}

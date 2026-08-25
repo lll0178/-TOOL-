@@ -1,0 +1,5 @@
+// 牛客app 资源文件
+#include "resource.h"
+
+// 程序图标（app.ico 由 下载.png 生成）
+IDI_APP_ICON ICON "app.ico"

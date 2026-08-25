@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <title>DeepSeek 翻译助手</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <h1>🈶 DeepSeek 翻译助手</h1>
+
+  <label>
+    API Key
+    <input type="password" id="apiKey" placeholder="sk-..." autocomplete="off" />
+  </label>
+
+  <label>
+    目标语言
+    <input type="text" id="targetLang" placeholder="中文" />
+  </label>
+
+  <label>
+    模型
+    <select id="model">
+      <option value="deepseek-chat">deepseek-chat（推荐，快）</option>
+      <option value="deepseek-reasoner">deepseek-reasoner（深度思考）</option>
+    </select>
+  </label>
+
+  <label>
+    API 地址（一般不用改）
+    <input type="text" id="baseUrl" placeholder="https://api.deepseek.com" />
+  </label>
+
+  <button id="save">保存设置</button>
+  <div id="status"></div>
+
+  <div class="tip">
+    使用方法：在任意网页（GitHub / Codeforces 等）选中英文 → 点击浮出的<b>“译”</b>按钮；
+    或右键 → <b>“翻译选中文本（DeepSeek）”</b>。
+  </div>
+  <div class="tip">
+    没有 API Key？到 <a href="https://platform.deepseek.com" target="_blank">platform.deepseek.com</a>
+    → 左侧“API Keys” → 创建，复制以 sk- 开头的密钥。
+  </div>
+  <div class="tip small">
+    API Key 仅保存在本机浏览器中，不会上传到其他地方。
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
